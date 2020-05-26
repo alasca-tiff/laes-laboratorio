@@ -1,0 +1,64 @@
+body {
+    margin: 0;
+}
+
+.top-header {
+    background-color: #892f2f;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.top-header .container .content-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.top-header .container .content-header .img-logo img{
+    height: 100px;
+}
+
+.top-header .container .content-header .screen-description {
+    color: #fff;
+}
+
+.container .card {
+    box-shadow: 0 0 14px 5px rgba(0, 0, 0, 0.06);
+    border-radius: 6px;
+    padding: 15px;
+    height: 65vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    width: 80%;
+    margin: 8vh auto 0;
+    max-width: 1000px;
+}
+
+.card .input-login {
+    display: block;
+    margin: 5px 0 10px;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    font-size: 16px;
+    padding: 15px 10px;
+    color: #848080;
+    width: 400px;
+}
+
+.card .top-card {
+    margin-bottom: 40px;
+}
+
+.card .top-card .title-card {
+    text-align: center;
+}
+
+
+.card .top-card .card-description{
+    width: 380px;
+}
