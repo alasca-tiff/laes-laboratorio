@@ -1,64 +1,149 @@
 body {
-    margin: 0;
+	margin: 0;
+	display: inline;
+	font-family: 'Raleway', sans-serif;
 }
 
 .top-header {
-    background-color: #892f2f;
+	background-color: #892f2f;
+	position: inherit;
 }
 
 .container {
-    width: 80%;
-    margin: 0 auto;
+	width: 80%;
+	margin: 0 auto;
 }
 
 .top-header .container .content-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
 }
 
 .top-header .container .content-header .img-logo img{
-    height: 100px;
+	height: 100px;
 }
 
 .top-header .container .content-header .screen-description {
-    color: #fff;
+	color: #fff;
+	font-size: 22px;
 }
 
 .container .card {
-    box-shadow: 0 0 14px 5px rgba(0, 0, 0, 0.06);
-    border-radius: 6px;
-    padding: 15px;
-    height: 65vh;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: center;
-    width: 80%;
-    margin: 8vh auto 0;
-    max-width: 1000px;
+	box-shadow: 0 0 14px 5px rgba(0, 0, 0, 0.06);
+	border-radius: 6px;
+	padding: 15px;
+	height: 65vh;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	width: 80%;
+	margin: 8vh auto 0;
+	max-width: 1000px;
 }
 
 .card .input-login {
-    display: block;
-    margin: 5px 0 10px;
-    border: 1px solid #cccccc;
-    border-radius: 4px;
-    font-size: 16px;
-    padding: 15px 10px;
-    color: #848080;
-    width: 400px;
+	display: block;
+	margin: 5px 0 25px;
+	border: 1px solid #cccccc;
+	border-radius: 4px;
+	font-size: 14px;
+	padding: 15px 10px;
+	color: #848080;
+	width: 400px;
+}
+.input-login:focus {
+	outline: none;
 }
 
 .card .top-card {
-    margin-bottom: 40px;
+	height: 23vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
 }
 
 .card .top-card .title-card {
-    text-align: center;
+	text-align: center;
+}
+
+.card .top-card .title-card h2 {
+	margin-top: 0;
+	font-size: 24px;
 }
 
 
 .card .top-card .card-description{
-    width: 380px;
+	max-width: 380px;
+	font-size: 16px;
+}
+
+.container .card .content-card {
+	height: 30vh;
+}
+.container .card .content-card form {
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+}
+
+.container .card .content-card .button-action {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+}
+
+ .login-button {
+	background-color: #892f2f;
+	border-radius: 40px;
+	color: white;
+	padding: 10px 40px;
+	border: none;
+	width: fit-content;
+	margin: 0 auto;
+	font-size: 14px;
+	font-weight: 600;
+}
+
+.login-button:focus {
+	outline: none;
+}
+
+.container .card .content-card .button-action .forgot-password {
+	color: #892f2f;
+	text-decoration: underline;
+	font-weight: 600;
+	margin: 10px 0 20px;
+	font-size: 12px;
+}
+
+@media (max-width: 580px) {
+	.container .card {
+		width: 90% !important;
+	}
+	.container .card .card-description {
+		font-size: 14px;
+		max-width: 260px;
+	}
+	.top-header .content-header {
+		display: flex;
+		flex-direction: column;
+		margin-bottom: 25px;
+	}
+	.top-header .content-header .screen-description{
+		margin: 10px 0 25px;
+	}
+	.card .input-login {
+		width: 290px;
+	}
+}
+
+@media (max-width: 420px) {
+	.container .card {
+		box-shadow: none;
+    margin-top: 0;
+	}
+	.card .input-login {
+		width: 240px;
+	}
 }
